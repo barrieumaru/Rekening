@@ -1,5 +1,6 @@
 package be.vives.ti;
 
+
 public class ZichtRekening extends Rekening {
 
 
@@ -7,6 +8,12 @@ public class ZichtRekening extends Rekening {
         super(reknr, naam);
     }
 
+    /**
+     * Ik heb een controle bij deze methode gedaan
+     * eigelijk het moest toen niet gecontroleerd worden
+     * maar door de kwaliteit van de code heb ik dat toch gedaan
+     * @param nieuwSaldo
+     */
     @Override
     public void storten(double nieuwSaldo){
         if(nieuwSaldo > 0) {

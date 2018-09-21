@@ -33,13 +33,13 @@ public double berekenRent(){
 
     @Override
     public void opnemen(double teNemenBedrag){
-        if(teNemenBedrag > 0)
+        if(teNemenBedrag > 0 && teNemenBedrag <= getSaldo())
         {
             setSaldo(getSaldo()-teNemenBedrag);
 
         }
         else {
-            System.out.println("bedrag moet positief zijn");
+            System.out.println("Er is probleem met het ingevoerd bedrag " + teNemenBedrag);
 
         }
 

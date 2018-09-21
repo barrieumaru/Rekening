@@ -10,6 +10,10 @@ public class Rekening {
         this.naam = naam;
         saldo = 0.0;
     }
+    public double berekenRent(){
+        return  0.0;
+
+    }
 
     public String getReknr() {
         return reknr;
@@ -54,7 +58,7 @@ public class Rekening {
         return "Rekening{" +
                 "reknr='" + reknr + '\'' +
                 ", naam='" + naam + '\'' +
-                ", saldo=" + saldo +
+                ", saldo= " + saldo +
                 '}';
     }
 }
